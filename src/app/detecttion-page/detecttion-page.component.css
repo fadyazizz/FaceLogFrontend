@@ -1,0 +1,15 @@
+.containerDetectionPage {
+  display: grid;
+  overflow-y: hidden;
+  grid-template-rows: 100vh;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "video captures";
+}
+.videoDetectionPage {
+  overflow-y: hidden;
+  grid-area: video;
+}
+.sideDetectionPage {
+  grid-area: captures;
+  overflow-y: hidden;
+}

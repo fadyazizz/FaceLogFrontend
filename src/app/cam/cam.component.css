@@ -1,0 +1,18 @@
+.list-unstyled {
+  list-style: none;
+}
+
+.list-unstyled li {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+  overflow-y: hidden;
+}
+
+.hide {
+  display: none;
+}

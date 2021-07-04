@@ -1,0 +1,12 @@
+<div class="containerSide">
+  <div class="imageContainer" *ngFor="let image of dataArr">
+    <app-image-side
+      [imgSrc]="image.image"
+      [name]="image.name"
+      [id]="image.id"
+      [createdDate]="image.createdDate"
+      [nameSet]="image.name ? true : false"
+      (messageEvent)="updateName($event)"
+    ></app-image-side>
+  </div>
+</div>

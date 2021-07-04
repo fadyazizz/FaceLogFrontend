@@ -1,0 +1,33 @@
+.imageSideContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "leftTop rightTop"
+    "leftBottom rightBottom";
+}
+.imageSideImage {
+  grid-area: leftTop;
+}
+.imageSideName {
+  grid-area: rightTop;
+  position: relative;
+  top: 30%;
+}
+.imageSideInput {
+  grid-area: rightTop;
+  height: 20%;
+  position: relative;
+  top: 30%;
+}
+.imageSideDate {
+  grid-area: rightBottom;
+  padding: 0%;
+  margin: 0%;
+  margin-top: -20%;
+}
+.imageSideButton {
+  grid-area: rightBottom;
+  margin: 0%;
+  margin-top: -10%;
+}

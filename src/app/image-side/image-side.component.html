@@ -1,0 +1,19 @@
+<div class="imageSideContainer">
+  <img class="imageSideImage" width="70%" [src]="imgSrc" />
+  <input
+    class="imageSideInput"
+    type="text"
+    (keyup)="getName($event)"
+    *ngIf="!nameSet"
+  />
+  <p class="imageSideDate">{{ createdDate }}</p>
+  <p class="imageSideName" *ngIf="nameSet">{{ name }}</p>
+  <button
+    class="imageSideButton"
+    (click)="giveName($event)"
+    [id]="id"
+    *ngIf="name && !nameSet"
+  >
+    Ok
+  </button>
+</div>

@@ -1,0 +1,14 @@
+<div class="containerDetectionPage">
+  <div class="videoDetectionPage">
+    <ng-content></ng-content
+    ><app-cam (messageEvent)="receiveMessage($event)"> </app-cam>
+  </div>
+
+  <div class="sideDetectionPage">
+    <ng-content></ng-content
+    ><app-side
+      [dataArr]="sendData"
+      (messageEvent)="updateName($event)"
+    ></app-side>
+  </div>
+</div>

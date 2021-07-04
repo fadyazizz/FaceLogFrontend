@@ -1,0 +1,9 @@
+.containerSide {
+  overflow-y: scroll;
+  max-height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.imageContainer {
+  overflow-y: hidden;
+}
